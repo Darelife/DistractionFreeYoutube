@@ -6,6 +6,8 @@ import os
 from flask import Flask, render_template, request
 from threading import Thread
 
+api = "youtubev3_api"
+
 #The developer variable is there to make sure that u don't use up those limited api calls while working on the project.
 developer = True #It's a boolean value -> True or False
 #developer = True #Developer mode
@@ -32,8 +34,6 @@ channelIdList = {
     "Veritasium":"UCHnyfMqiRRG1u-2MsSQLbXA",
     # "Tom_Scott":"UCBa659QWEk1AI4Tg--mrJ2A"
 }
-
-api = "api"
 
 vids = {}
 
