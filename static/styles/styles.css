@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap'); 
+*
+{
+  width:1350px;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+  /* zoom: 120%; */
+}
+#embed{
+  position: relative;
+  /* left:25em */
+}
+/* #backgroundImage{
+  width:1350px;
+  height:675px;
+  text-align: center;
+} */
+body{
+  background-image:url("/static/img/bg.png");
+  max-width: 100%;
+
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fedcc8;
+}
+.header #bg{
+  position: absolute;
+  
+  top: 0;
+  left:0;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  background-image:url(/static/img/backgroundforwebsite.png);
+}
+#layer1{
+  position: absolute;
+  top:0px;
+  width:50%;
+  height:50%;
+  /* background-image:url(/static/img/layer1mountain.png); */
+}
+#layer2{
+  position: absolute;
+  top:25.375em;
+  width:100%;
+  
+  /* height:10%; */
+  /* overflow: hidden; */
+
+  /* background-image:url(/static/img/layer1mountain.png); */
+}
+#weather{
+  position: absolute;
+  top:31.25em;
+}
+/* #bird
+{
+  position: absolute;
+  top:9em;
+  left:0em;
+  clip-path: circle(50% at 100% 50%)
+} */

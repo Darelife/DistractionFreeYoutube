@@ -1,0 +1,29 @@
+<!DOCTYPEhtml>
+<html>
+<body>
+<!-- {% autoescape false %} -->
+  <p id="embed">{{e}}</p>
+  <button type="button" onclick="strReplace();">Replace</button>
+  alert("sup");
+
+
+<!-- {% endautoescape %} -->
+<script>
+  
+  // let embeds = ""
+  var myArray = {{e}}.replace("|||", "<br>");
+  // console.log(myArray)
+  document.getElementById("embed").innerHTML = myArray
+  
+</script>
+<script>
+    function strReplace(){
+        var myStr = {{e}};
+        var newStr = myStr.replace('|||', "<br>");
+        
+        // Insert modified string in paragraph
+        document.getElementById("embed").innerHTML = newStr;
+    }
+</script>
+</body>
+</html>

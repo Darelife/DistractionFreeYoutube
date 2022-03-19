@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="/static/styles/styles.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class = header>
+  <div id = "bg">
+    <!-- <img src = "/static/img/backgroundforwebsite.png" id = "backgroundImage"> -->
+  </div>
+</div>
+<div id = "layer1">
+  <img src = "/static/img/layer1mountain.png">
+</div>
+<div id = "layer2">
+  <img src = "/static/img/layer2.png">
+</div>
+<!-- <div id = "bird" class = "cropped">
+  <img src = "/static/img/bird.png">
+</div> -->
+
+<div class = "weather">
+<a class="weatherwidget-io" href="https://forecast7.com/en/26d9175d79/jaipur/" data-label_1="JAIPUR" data-label_2="WEATHER" data-theme="original" >JAIPUR WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/19d0872d88/mumbai/" data-label_1="MUMBAI" data-label_2="WEATHER" data-theme="original" >MUMBAI WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/29d3448d07/salmiya/" data-label_1="SALMIYA" data-label_2="WEATHER" data-theme="original" >SALMIYA WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</div>
+<!-- <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&time=2021-11-21&region=Asia&facet=none&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe> -->
+<br>
+{% autoescape false %}
+  <span id="embed">{{embeds}}</span>
+{% endautoescape %}
+Last updated on {{current_time}}
+<!-- <script type="text/javascript">
+  var headerBg = document.getElementById(bg);
+  window.addEventListener('scroll', function(){
+    headerBg.style.opacity = 1 - +window.pageYOffset/550+''
+    // headerBg.style.top = +window.pageYOffset+'px'
+  })
+
+</script> -->
+    <script>
+      // let bg = document.getElementById('bg');
+      let layer1 = document.getElementById('layer1');
+      let layer2 = document.getElementById('layer2');
+      // let bird = document.getElementById('bird');
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+
+        // bg.style.top = value * -0.1 + '%';
+        // bg.style.opacity = 100 - value*0.2 + '%'
+        layer1.style.top = value * -0.03 + 'em'
+        layer1.style.opacity = 100 - value*0.3+ '%'
+        layer2.style.top = 25.375 + value* -0.06 + 'em'
+        // layer2.style.opacity = 100 - value*(0.3) + '%'
+        
+        // if (value<100){
+        //   bird.style.top = 9+value*0.09 + 'em'
+        //   bird.style.left = value*0.2 + 'em'
+        //   bird.style.opacity = 100 - value*(2) + '%'
+        //   if (bird.style.opacity < 0){
+        //     bird.src="";
+        //   }
+        // }
+      })
+    </script>
+    <script language="javascript">
+if(screen.width>=1900) {document.write("<style>body{zoom:140.5%;}</style>");}
+</script>
+</body>
+</html>
