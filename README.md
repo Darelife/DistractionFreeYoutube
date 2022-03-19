@@ -2,8 +2,8 @@
 Made it to avoid getting distracted by youtube vids.
 
 # Webpages
-video_id -> The id of the video at the end of the url
-Eg: In, "https://www.youtube.com/watch?v=abcdefghijk" video_id = "abcdefghijk"
+video_id -> The id of the video at the end of the url <br>
+Eg: In, "https://www.youtube.com/watch?v=abcdefghijk" video_id = "abcdefghijk"<br>
     Or In, "https://youtu.be/abcdefghijk", video_id = "abcdefghijk"
 
 * ### Home Page (/):- 
