@@ -18,7 +18,7 @@ Eg: In, "https://www.youtube.com/watch?v=abcdefghijk" video_id = "abcdefghijk"<b
 # Setup
 Need to finish writing this part
 ### **(Required)** Api Key
-* Go to `https://console.cloud.google.com/apis/api/youtube.googleapis.com`, [click on "Enable" to enable the YouTube Data API v3](!readmeFiles/enableYoutubeAPI.png)
+* Go to `https://console.cloud.google.com/apis/api/youtube.googleapis.com`, [click on "Enable" to enable the YouTube Data API v3](!https://github.com/Darelife/DistractionFreeYoutube/blob/main/readmeFiles/enableYoutubeAPI.png)
 * Need to add stuff here
 ### (optional) Set default home page video
 ### (optional) If you want to get the limited videos uploaded by your selected content creators
