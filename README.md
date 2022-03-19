@@ -19,9 +19,9 @@ Eg: In, "https://www.youtube.com/watch?v=abcdefghijk" video_id = "abcdefghijk"<b
 Need to finish writing this part
 ### **(Required)** Api Key
 * Go to `https://console.cloud.google.com/apis/api/youtube.googleapis.com` ,and click on "enable", ![click on "Enable" to enable the YouTube Data API v3](https://github.com/Darelife/DistractionFreeYoutube/blob/main/readmeFiles/enableYoutubeAPI.png) You will then be redirected to a page.
-* Go to the credentials tab ![It's below the API info]().
+* Go to the credentials tab ![It's below the API info](https://github.com/Darelife/DistractionFreeYoutube/blob/main/readmeFiles/credentialsTab.png).
 * Create an API KEY
 * Place the value of the API in the line below the "importing lines" in `yt_rec.py` in place of the `api` variable. It's a string.
 ### (optional) Set default home page video
-Explained in [the HOMEPAGE subheading in Webpages](###-Home-Page-(/):)
+Explained in [the HOMEPAGE subheading in Webpages](#home-page-)
 ### (optional) If you want to get the limited videos uploaded by your selected content creators
