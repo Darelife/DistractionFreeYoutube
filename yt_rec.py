@@ -30,10 +30,10 @@ import os
 from flask import Flask, render_template, request, make_response
 from threading import Thread
 
-api = "youtubev3_api"
+api : str = "youtubev3_api"
 
 #The developer variable is there to make sure that u don't use up those limited api calls while working on the project.
-developer = True #It's a boolean value -> True or False
+developer :bool = True #It's a boolean value -> True or False
 #developer = True #Developer mode
 #developer = False #Client mode
 
@@ -47,7 +47,7 @@ developer = True #It's a boolean value -> True or False
 # to get channel_id
 # content="vnd.youtube://www.youtube.com/channel/ - search this in the page source of channels page for channel_id
 
-channelIdList = {
+channelIdList :dict = {
     "Mrbeast6000":"UCX6OQ3DkcsbYNE6H8uQQuVA",
     "Technoblade":"UCFAiFyGs6oDiF1Nf-rRJpZA",
     "Mrwhosetheboss":"UCMiJRAwDNSNzuYeN2uWa0pA",
@@ -59,7 +59,7 @@ channelIdList = {
     # "Tom_Scott":"UCBa659QWEk1AI4Tg--mrJ2A"
 }
 
-vids = {}
+vids :dict = {}
 
 def get_vids(channelId, API_KEY):
     url = f"https://www.googleapis.com/youtube/v3/search"
@@ -107,7 +107,7 @@ def get_channel_id(username, API_KEY):
 
 
 
-channelIdList = {
+channelIdList : dict = {
     "Mrbeast6000":"UCX6OQ3DkcsbYNE6H8uQQuVA",
     "Colin&Samir":"UCamLstJyCa-t5gfZegxsFMw",
     "AliAbdaal":"UCoOae5nYA7VqaXzerajD0lg",
@@ -129,7 +129,7 @@ channelIdList = {
 #     # "MarkRober":"UCY1kMZp36IQSyNx_9h4mpCg",
 #     # "LaterClips":"UCtVGGeUqfVHOK4Q6nAwYO3g"
 # }
-app = Flask('')
+app :Flask= Flask('')
 
 #vids dictionary's values
 if developer == True:
@@ -139,7 +139,7 @@ if developer == False:
   for i in channelIdList:
       # global vids
       vid = []
-      data = get_vids(channelIdList[i], API_KEY)
+      data = get_vids(channelIdList[i], api)
       with open("data.json", "w") as f:
         json.dump(data, f, indent = 2)
       index = 0
