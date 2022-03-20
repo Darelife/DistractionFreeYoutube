@@ -22,7 +22,15 @@ Need to finish writing this part
 * Go to the credentials tab ![It's below the API info](https://github.com/Darelife/DistractionFreeYoutube/blob/main/readmeFiles/credentialsTab.png)
 * Create an API KEY
 * Place the value of the API in the line below the "importing lines" in `yt_rec.py` in place of the `api` variable. It's a string.
+### (optional) Edit the cities for the weather
+Change the cities mentioned for the weather in `templates/yt.html`.
 ### (optional) Set default home page video
 Explained in [the HOMEPAGE subheading in WEBPAGES](#home-page-)
 ### (optional) If you want to get the limited videos uploaded by your selected content creators
 Explained in [the SELECTED CONTENT CREATORS subheading in WEBPAGES](#selected-content-creators-uploaded-in-the-last-week-only-youtube-)
+
+# Ideas & Things To Do
+* Work on the parallax animation, by adding more layers.
+* Remove "Welcome Darelife" and replace it with motivational quotes
+* Make the video pop out when the video isn't in the users frame of view.
+* Work on making the display perfect for different screen sizes.
