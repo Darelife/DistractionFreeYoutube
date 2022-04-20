@@ -29,6 +29,9 @@ Explained in [the HOMEPAGE subheading in WEBPAGES](#home-page-)
 ### (optional) If you want to get the limited videos uploaded by your selected content creators
 Explained in [the SELECTED CONTENT CREATORS subheading in WEBPAGES](#selected-content-creators-uploaded-in-the-last-week-only-youtube-)
 
+# Important Fixes
+- Need to save the data somewhere else, instead of cookies, cuz cookies are temporary
+
 # Ideas & Things To Do
 * Work on the parallax animation, by adding more layers.
 * Remove "Welcome Darelife" and replace it with motivational quotes
